@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLA PRACODAWCY</title>
-  <style>
+ <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-	.container {
-            display: flex; 
+
+        .container {
+            display: flex;
             align-items: center;
- 	text-align: center; 
-	margin-left: 400px;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 10px;
         }
-	img {
-            width: 150px; 
-            height: auto; 
-            margin-right: 10px; 
-            margin-top: 0px; 
-	
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+            margin-top: 0px;
         }
 
         header {
@@ -35,23 +38,19 @@
 
         section {
             display: flex;
+            flex-wrap: wrap; 
             justify-content: space-around;
-            max-width: 1300px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-	sector {
-            border: 100px solid #ccc;
-            padding: 20px;
-            margin-bottom: 20px; 
-
-        }
 
         column {
             flex: 1;
             padding: 0 10px;
+            margin-bottom: 20px; 
         }
 
         footer {
@@ -59,6 +58,12 @@
             padding: 1em 0;
             background-color: #fff;
             color: #333;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
